@@ -2,7 +2,7 @@
 ### 1、创建model表
  ![这里写图片描述](./img/1.png)
  
-**基本结构:**
+** 基本结构: **
 
 ```
 from django.db import models
