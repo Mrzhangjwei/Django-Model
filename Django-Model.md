@@ -49,33 +49,33 @@ integer_field_ranges ={
 - 24.  models.FilePathField文件
 
  更多参数:
-1.  null=True
+- 1.  null=True
 数据库中字段是否可以为空
-2.  blank=True
+- 2.  blank=True
 django的Admin中添加数据时是否可允许空值
-3.  primary_key =False
+- 3.  primary_key =False
 主键，对AutoField设置主键后，就会代替原来的自增 id 列
-4.  auto_now 和 auto_now_add
+- 4.  auto_now 和 auto_now_add
 auto_now 自动创建---无论添加或修改，都是当前操作的时间
 auto_now_add 自动创建---永远是创建时的时间
-5.  choices
+- 5.  choices
 GENDER_CHOICE =(
 (u'M', u'Male'),
 (u'F', u'Female'),
 )
 gender = models.CharField(max_length=2,choices = GENDER_CHOICE)
-6.  max_length
-7.  default 默认值
-8.  verbose_name Admin中字段的显示名称
-9.  name|db_column 数据库中的字段名称
-10.  unique=True 不允许重复
-11.  db_index =True 数据库索引
-12.  editable=True 在Admin里是否可编辑
-13.  error_messages=None 错误提示
-14.  auto_created=False 自动创建
-15.  help_text 在Admin中提示帮助信息
-16.  validators=[]
-17.  upload-to
+- 6.  max_length
+- 7.  default 默认值
+- 8.  verbose_name Admin中字段的显示名称
+- 9.  name|db_column 数据库中的字段名称
+- 10.  unique=True 不允许重复
+- 11.  db_index =True 数据库索引
+- 12.  editable=True 在Admin里是否可编辑
+- 13.  error_messages=None 错误提示
+- 14.  auto_created=False 自动创建
+- 15.  help_text 在Admin中提示帮助信息
+- 16.  validators=[]
+- 17.  upload-to
 
 ### 2、注册APP，settings添加app
 ### 3、生成相应的表
@@ -91,9 +91,13 @@ python manage.py migrate
 `python manage.py createsuperuser`创建用户
 
  后台可以管理，添加数据
+ 
+ 
 ![这里写图片描述](./img/4.png)
 
+
 ![这里写图片描述](./img/5.png)
+
 
 ## 二、对数据进行增删改查
 
@@ -112,7 +116,9 @@ models.UserInfo.objects.get(user='yangmv')
 
 ![这里写图片描述](./img/8.png)
 
+
  成功获取数据:
+
 
 ![这里写图片描述](./img/9.png)
 
