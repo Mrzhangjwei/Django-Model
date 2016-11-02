@@ -2,7 +2,8 @@
 ### 1、创建model表
  ![这里写图片描述](./img/1.png)
  
- **基本结构:**
+**基本结构:**
+
 ```
 from django.db import models
 
@@ -13,7 +14,8 @@ email = models.EmailField()
 memo = models.TextField()
 ```
 
- **更多字段:**
+**更多字段:**
+
 - 1.  models.AutoField 自增列= int(11) 如果没有的话，默认会生成一个名称为 id 的列，如果要显示的自定义一个自增列，必须将给列设置为主键 primary_key=True。
 - 2.  models.CharField 字符串字段必须 max_length 参数
 - 3.  models.BooleanField 布尔类型=tinyint(1)不能为空，Blank=True
@@ -48,7 +50,8 @@ integer_field_ranges ={
 - 23.  models.ImageField图片
 - 24.  models.FilePathField文件
 
- **更多参数:**
+**更多参数:**
+
 - 1.  null=True
 数据库中字段是否可以为空
 - 2.  blank=True
